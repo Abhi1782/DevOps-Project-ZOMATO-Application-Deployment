@@ -6,7 +6,7 @@ This project demonstrates a comprehensive implementation of the DevOps lifecycle
 
 The solution includes:
 
- CI/CD automation using Jenkins  
+- CI/CD automation using Jenkins  
 - Code quality and security scanning  
 - Containerization with Docker  
 - Continuous monitoring using Prometheus & Grafana  
@@ -28,4 +28,4 @@ The solution includes:
 | Orchestration | Kubernetes (EKS) |
 | GitOps | Argo CD |
 
----
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
