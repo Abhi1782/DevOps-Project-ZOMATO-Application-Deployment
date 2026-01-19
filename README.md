@@ -1,4 +1,19 @@
-# DevOps-Project-ZOMATO-Application-Deployment
+# 🚀 DevOps-Project-ZOMATO-Application-Deployment
+
+## 📌 Project Overview
+
+This project demonstrates a comprehensive implementation of the DevOps lifecycle for deploying a ZOMATO Clone application, utilizing modern DevOps, DevSecOps, Monitoring, and Kubernetes practices.
+
+The solution includes:
+
+CI/CD automation using Jenkins
+Code quality and security scanning
+Containerization with Docker
+Continuous monitoring using Prometheus & Grafana
+Kubernetes deployment using Amazon EKS
+GitOps-based deployment with Argo CD
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🧰 Technology Stack
 
