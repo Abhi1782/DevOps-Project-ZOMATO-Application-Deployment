@@ -29,3 +29,11 @@ The solution includes:
 | GitOps | Argo CD |
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+##  ⚙️ Infrastructure Setup
+### 1️⃣ Launch Jenkins Server (CI/CD VM)
+
+  - OS: Ubuntu 24.04
+  - Instance Type: t2.large
+  - Storage: 30 GB
+  - Ports: 22, 8080, 9000, 3000
