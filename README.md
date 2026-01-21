@@ -1,7 +1,7 @@
 # 🚀 DevOps-Project-ZOMATO-Application-Deployment
 
-Author: Abhishek Prajapati  
-Role: DevOps & Cloud Engineer
+**Author:** Abhishek Prajapati  
+**Role:** DevOps & Cloud Engineer  
 
 ## 📌 Project Overview
 
@@ -716,8 +716,7 @@ Describe pod:
     kubectl describe pod <pod-name>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                              
-<hr>
+                                                                          
 <p align="center">
   <strong>HAPPY LEARNING</strong><br>
   <em>© Abhishek Prajapati | DevOps & Cloud Engineer</em><br>
