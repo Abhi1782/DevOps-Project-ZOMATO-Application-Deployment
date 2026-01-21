@@ -1,9 +1,7 @@
 # 🚀 DevOps-Project-ZOMATO-Application-Deployment
 
-<p align="center">
-  <strong>Author:</strong> Abhishek Prajapati<br>
-  <em>DevOps & Cloud Engineer</em>
-</p>
+Author: Abhishek Prajapati  
+Role: DevOps & Cloud Engineer
 
 ## 📌 Project Overview
 
