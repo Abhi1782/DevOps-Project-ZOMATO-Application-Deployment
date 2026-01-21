@@ -1,5 +1,10 @@
 # 🚀 DevOps-Project-ZOMATO-Application-Deployment
 
+<p align="center">
+  <strong>Author:</strong> Abhishek Prajapati<br>
+  <em>DevOps & Cloud Engineer</em>
+</p>
+
 ## 📌 Project Overview
 
 This project demonstrates a comprehensive implementation of the DevOps lifecycle for deploying a ZOMATO Clone application, utilizing modern DevOps, DevSecOps, Monitoring, and Kubernetes practices.
@@ -714,7 +719,9 @@ Describe pod:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                               
+<hr>
 <p align="center">
   <strong>HAPPY LEARNING</strong><br>
-  <em>Keep Building • Keep Learning</em>
+  <em>© Abhishek Prajapati | DevOps & Cloud Engineer</em><br>
+  <sub>Docker • Kubernetes • AWS • CI/CD</sub>
 </p>
