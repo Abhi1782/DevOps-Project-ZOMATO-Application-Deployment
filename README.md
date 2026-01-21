@@ -162,6 +162,8 @@ Replace:
 - Credentials IDs
 before running the pipeline.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
       *********************
       Pipeline Script
       *********************
@@ -326,6 +328,8 @@ If OWASP FS Scan shows UNSTABLE, replace the scan stage with:
   - Systemd service configuration
   - Access: http://<Monitoring-IP>:9090
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
         First, create a dedicated Linux user for Prometheus and download Prometheus
         sudo useradd --system --no-create-home --shell /bin/false prometheus
         wget https://github.com/prometheus/prometheus/releases/download/v2.47.1/prometheus-2.47.1.linux-amd64.tar.gz
@@ -400,6 +404,7 @@ If OWASP FS Scan shows UNSTABLE, replace the scan stage with:
   - Scrapes node-level metrics
   - Port: 9100
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         cd 
         You are in ~ path now
         
@@ -450,14 +455,15 @@ If OWASP FS Scan shows UNSTABLE, replace the scan stage with:
 
 ### 🔹Configure Prometheus Plugin Integration Jenkins & Node Exporter Integration
 
-    As of now, we created a Prometheus service, but we need to add a job in order to fetch the details by node exporter. So, for that, we need to create 2 jobs, one with 'node exporter' and the other with 'jenkins' as shown below;
+
+    As of now, we created a Prometheus service, but we need to add a job in order to fetch the details by node exporter. So, for that, we need to create 2 jobs, one with 'node exporter'     and the other with 'jenkins' as shown below;
     
     Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
     
     Prometheus Configuration:
     
     To configure Prometheus to scrape metrics from Node Exporter and Jenkins, you need to modify the prometheus.yml file. 
-    The path of prometheus.yml is: cd /etc/prometheus/ ----> ls -l ----> You can see the "prometheus.yml" file ----> sudo vi prometheus.yml ----> You will see the content and also there is a default job called "Prometheus". Paste the below content at the end of the file;
+    The path of prometheus.yml is: cd /etc/prometheus/ ----> ls -l ----> You can see the "prometheus.yml" file ----> sudo vi prometheus.yml ----> You will see the content and also there     is a default job called "Prometheus". Paste the below content at the end of the file;
     
       - job_name: 'node_exporter'
         static_configs:
@@ -566,6 +572,8 @@ Verify:
 
     kubectl version --client
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🔹 Step 2: Install Minikube
     
     curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
@@ -574,6 +582,8 @@ Verify:
 Verify:
       
       minikube version
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🔹 Step 3: Start Minikube on Server
 
@@ -588,6 +598,8 @@ Verify cluster status:
 
 ✔ Node should be in Ready state.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🔹 Step 4: Build or Load Zomato Docker Image
 
 Option 1: Build image inside Minikube
@@ -598,6 +610,8 @@ Option 1: Build image inside Minikube
 Option 2: Load existing image
 
     minikube image load zomato-app:latest
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🔹 Step 5: Create Kubernetes Deployment Manifest
 
@@ -624,6 +638,8 @@ Option 2: Load existing image
               ports:
               - containerPort: 80
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🔹 Step 6: Create Kubernetes Service Manifest
 
 - service.yaml
@@ -641,6 +657,8 @@ Option 2: Load existing image
             targetPort: 80
             nodePort: 30007
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  ### 🔹 Step 7: Deploy Zomato Application
 
   Apply the Kubernetes manifests:
@@ -656,6 +674,8 @@ Option 2: Load existing image
 
 ✔ Pods should be Running.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🔹 Step 8: Access the Application
 
 - Get Minikube IP:
@@ -668,6 +688,8 @@ Option 2: Load existing image
 
 ✔ Zomato application is now live on Kubernetes.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🔹 Step 9: Scaling the Application
 
 Scale the deployment horizontally:
@@ -677,6 +699,8 @@ Scale the deployment horizontally:
 Verify:
 
     kubectl get pods
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🔹 Step 10: Logs and Validation
 
