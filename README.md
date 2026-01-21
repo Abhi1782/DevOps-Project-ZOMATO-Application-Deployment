@@ -111,7 +111,7 @@ The solution includes:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🔹 Docker Scout
+### 🔹 Docker Scout
 
    - Login to DockerHub via browser
    - Enable Docker Scout
@@ -320,7 +320,7 @@ If OWASP FS Scan shows UNSTABLE, replace the scan stage with:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-###🔹 Prometheus Installation
+### 🔹 Prometheus Installation
 
   - Dedicated Prometheus user
   - Systemd service configuration
