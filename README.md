@@ -26,7 +26,6 @@ The solution includes:
 | Security | Trivy, OWASP Dependency-Check, Docker Scout |
 | Monitoring | Prometheus, Grafana, Node Exporter |
 | Orchestration | Kubernetes (EKS) |
-| GitOps | Argo CD |
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
